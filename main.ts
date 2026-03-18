@@ -1,20 +1,4 @@
-input.onButtonPressed(Button.A, function () {
-    a += 1
-    CustomLEDs.showNumberLED(a)
-})
-input.onButtonPressed(Button.B, function () {
-    b += 1
-    CustomLEDs.showNumberLED(b)
-})
-input.onGesture(Gesture.Shake, function () {
-    basic.clearScreen()
-    basic.showString("" + convertToText(a) + "x" + convertToText(b) + "=" + a * b)
-    a = 0
-    b = 0
-})
-let b = 0
-let a = 0
-namespace CustomLEDs {
+namespace MrJeonBlocks {
 
     /**
      * Lights up a specific number of LEDs in order.
@@ -29,6 +13,4 @@ namespace CustomLEDs {
     }
 
 }
-basic.forever(function () {
-	
-})
+
