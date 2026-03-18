@@ -1,4 +1,4 @@
-namespace MrJeonBlocks {
+namespace JBlocks {
 
     /**
      * Lights up a specific number of LEDs in order.
